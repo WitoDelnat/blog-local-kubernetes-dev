@@ -2,6 +2,7 @@
   "name": "nano",
   "version": "1.0.0",
   "description": "Nano server to follow along with 'The road to adopting Kubernetes in development' blog",
+  "repository": "github:WitoDelnat/blog-local-kubernetes-dev",
   "main": "index.js",
   "scripts": {
     "start": "node index.js"
