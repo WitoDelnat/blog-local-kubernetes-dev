@@ -1,0 +1,17 @@
+apiVersion: skaffold/v2beta6
+kind: Config
+metadata:
+  name: blog-local-kubernetes-dev
+build:
+  artifacts:
+    - image: demo
+deploy:
+  kustomize:
+    paths:
+      - k8s/overlays/local
+profiles:
+  - name: production
+    deploy:
+      kustomize:
+        paths:
+          - k8s/overlays/production
