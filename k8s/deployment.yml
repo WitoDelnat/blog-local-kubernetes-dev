@@ -18,3 +18,5 @@ spec:
           ports:
             - name: http-web
               containerPort: 8080
+          securityContext:
+            allowPrivilegeEscalation: false
